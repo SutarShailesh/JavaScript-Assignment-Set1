@@ -20,20 +20,20 @@ function EvenOdd(){
 function PrimeNumber(){
 
     let num,i=1,c=0;
-    num= prompt("Enter Number");
+    num= prompt("Enter Number")
 
     while(i<=num)
     {
           if(num%i==0)
-          c++;
-          i++;
+          c++
+          i++
     }
     if(c==2){
-        console.log(num+" is Prime Number");
+        console.log(num+" is Prime Number")
     }
     else
     {
-        console.log(num+" is Not Prime Number");
+        console.log(num+" is Not Prime Number")
     }       
 }
 

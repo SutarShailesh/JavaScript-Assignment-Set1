@@ -18,18 +18,23 @@ function EvenOdd(){
 
 //Function for prime number
 function PrimeNumber(){
-    let p_num = prompt("Enter number")
-    
-    if(p_num%p_num==0)
+
+    let num,i=1,c=0;
+    num= prompt("Enter Number");
+
+    while(i<=num)
     {
-       
-        if(p_num%1==0){
-            console.log(p_num+" is prime number")
-        }
+          if(num%i==0)
+          c++;
+          i++;
     }
-    else{
-        console.log(p_num+" is not prime number")
+    if(c==2){
+        console.log(num+" is Prime Number");
     }
+    else
+    {
+        console.log(num+" is Not Prime Number");
+    }       
 }
 
 //Function for printing table
